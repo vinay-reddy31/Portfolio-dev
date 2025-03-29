@@ -1,0 +1,19 @@
+.skill-item{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border:1px solid #ffffff;
+    border-radius: 8px;
+    list-style: none;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.skill-icon{
+height: 24px;
+width: 24px;
+margin-right: 4px;
+}
+.skill-name{
+    color: #ffffff;
+    font-size: 16px;
+}

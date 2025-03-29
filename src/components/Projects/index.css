@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 25, 36);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", " Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.app-container {
+  background-color: rgb(25, 25, 36);
+  max-width: 1110px;
+  margin: auto;
+}
+
+.title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 56px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.description {
+  max-width: 300px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .description {
+    max-width: 730px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.tabs-container {
+  max-width: 300px;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .tabs-container {
+    max-width: 455px;
+  }
+}
+
+.project-list-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .project-list-container {
+    margin-bottom: 150px;
+  }
+}
+
+.github-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.github-container p {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.github-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.github-button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: #b0ff4a 1px solid;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto";
+  box-shadow: 0 0 10px #333333;
+  outline: none;
+}
+
+.github-button:hover {
+  background-color: #2e7de6;
+  border: #ecf0e7 1px solid;
+  color: #ffffff;
+}

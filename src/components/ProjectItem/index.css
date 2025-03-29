@@ -1,0 +1,109 @@
+.project-item-container {
+  width: 339px;
+  background: #ffffff;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.project-item-image {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.project-item-details-container {
+  padding: 32px 24px 32px 24px;
+}
+
+.project-item-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #183b56;
+  margin: 0;
+}
+
+.project-item-description {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: #7b8794;
+}
+
+.project-item-button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #163961;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-item-button:hover {
+  background-color: #138530;
+  color: #ffffff;
+}
+
+/* .project-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-item-details-container {
+  padding: 16px;
+  text-align: center;
+}
+
+.project-item-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-item-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+} */
+.project-item-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-item-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hide the GitHub and Live Demo buttons by default */
+.project-item-container .project-item-button {
+  display: none;
+}
+
+/* Show buttons when the card is hovered */
+.project-item-container:hover .project-item-button {
+  display: inline-block;
+}
+
+/* Add hover effect for the card itself */
+.project-item-container:hover {
+  transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
