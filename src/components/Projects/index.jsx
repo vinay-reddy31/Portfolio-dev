@@ -50,7 +50,7 @@ const projects = [
     id: 5,
     title: "Book Recommendation System",
     description:
-      "Developed a Book trecommendation System where user get Top % Recommendations based on the book chosen",
+      "Developed a Book recommendation System where user get Top % Recommendations based on the book chosen",
     category: "AIML",
     github: "#",
     live: "#",
@@ -72,7 +72,14 @@ export default function ProjectsSection() {
   return (
     <div className="p-10 bg-gray-900 text-white">
       <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
-      <div className="flex justify-center space-x-2 mb-6">
+      <motion.div
+        key={selectedCategory}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        viewport={{ amount: 0.2 }}
+        className="flex justify-center space-x-2 mb-6"
+      >
         {categories.map((category) => (
           <button
             key={category}
@@ -86,7 +93,7 @@ export default function ProjectsSection() {
             {category}
           </button>
         ))}
-      </div>
+      </motion.div>
 
       <motion.div
         key={selectedCategory}

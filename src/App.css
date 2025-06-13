@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.global-spline-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none; /* let user click buttons above it */
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+}
