@@ -1,4 +1,5 @@
 import SkillItem from "../SkillItem";
+import { motion } from "framer-motion";
 import "./index.css";
 
 const frotendSkills = [
@@ -106,44 +107,100 @@ const ToolsandFrameworks = [
 const Skills = () => {
   return (
     <div>
-      <h2 className="skills-section-heading">Skills</h2>
-      <p className="skills-section-heading">Here are some of my skills.</p>
+      <h1>Skills</h1>
+      <p className="skills-section-para">Here are some of my skills.</p>
       <div className="skills-container">
-        <div className="skills-section">
-          <h2 className="skills-section-heading">Frotend</h2>
+        <motion.div
+          className="skills-section"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ amount: 0.2 }}
+        >
+          <h2 className="skills-section-heading">Frontend</h2>
           <ul className="skills">
-            {frotendSkills.map((eachItem) => (
-              <SkillItem eachItem={eachItem} />
+            {frotendSkills.map((eachItem, index) => (
+              <motion.li
+                key={eachItem.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ amount: 0.2 }}
+              >
+                <SkillItem eachItem={eachItem} />
+              </motion.li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="skills-section">
+        <motion.div
+          className="skills-section"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ amount: 0.2 }}
+        >
           <h2 className="skills-section-heading">Backend</h2>
           <ul className="skills">
-            {BackendSkills.map((eachItem) => (
-              <SkillItem eachItem={eachItem} />
+            {BackendSkills.map((eachItem, index) => (
+              <motion.li
+                key={eachItem.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <SkillItem eachItem={eachItem} />
+              </motion.li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="skills-section">
+        <motion.div
+          className="skills-section"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ amount: 0.2 }}
+        >
           <h2 className="skills-section-heading">Coding Languages</h2>
           <ul className="skills">
-            {CodingLanguages.map((eachItem) => (
-              <SkillItem eachItem={eachItem} />
+            {CodingLanguages.map((eachItem, index) => (
+              <motion.li
+                key={eachItem.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <SkillItem eachItem={eachItem} />
+              </motion.li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="skills-section">
+        <motion.div
+          className="skills-section"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ amount: 0.2 }}
+        >
           <h2 className="skills-section-heading">Tools & Technologies</h2>
           <ul className="skills">
-            {ToolsandFrameworks.map((eachItem) => (
-              <SkillItem eachItem={eachItem} />
+            {ToolsandFrameworks.map((eachItem, index) => (
+              <motion.li
+                key={eachItem.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ amount: 0.2 }}
+              >
+                <SkillItem eachItem={eachItem} />
+              </motion.li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

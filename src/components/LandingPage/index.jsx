@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <div>
       <Home />
-      {/* <About /> */}
+      <About />
       <Experience />
       <Skills />
       <Projects />

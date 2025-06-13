@@ -50,7 +50,7 @@ const Experience = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.2 }}
             >
               {/* Connector Dot */}
               <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-500 rounded-full flex items-center justify-center absolute md:left-1/2 transform md:-translate-x-1/2 shadow-lg border-4 border-white">

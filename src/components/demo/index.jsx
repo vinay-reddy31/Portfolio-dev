@@ -5,35 +5,31 @@ import { initFlowbite } from "flowbite";
 const accomplishments = [
   {
     id: 1,
-    image:
-      "https://media.licdn.com/dms/image/v2/D5622AQEN-AtUPP5iUg/feedshare-shrink_1280/feedshare-shrink_1280/0/1727674939919?e=1744848000&v=beta&t=adkYUbINlC4D6_M-ldjPSFN8G7JfaF7JbtGLIYl4j1I",
+    image: "/btl.png",
     title: "Hackathon Winner 🏆",
     description:
-      "Won the Bharth Tech League Hackathon 2024 featuring Creating innovative solutions with Artificial Intelligence in Agriculture",
+      "Won the Bharth Tech League Hackathon 2024 featuring Creating innovative solutions with Artificial Intellingence in the space of Agriculture",
   },
   {
     id: 2,
-    image:
-      "https://media.licdn.com/dms/image/v2/D5622AQFk0L-qKlO9BQ/feedshare-shrink_800/feedshare-shrink_800/0/1713281211493?e=1744848000&v=beta&t=b-9weZCOP-EdmCJM91yWg5bH0eJO_n1mY3okKolwDi0",
+    image: "/aws.png",
     title: "Amazon PartyRock Generative AI Hackathon",
     description:
-      "Rewarded with $250 AWS Credits for an Eligible Project and Outstanding Blogpost",
+      "Rewarded with $250 AWS Credits for Eligible Project and Oustanding Blogpost",
   },
   {
     id: 3,
-    image:
-      "https://media.licdn.com/dms/image/v2/D562DAQEjvzI2j5ey4g/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1731641091480?e=1743847200&v=beta&t=sJz9tfuVlY4G8eD079dIEh9T97lrY_d3FB-WTr-sg_g",
-    title: "GSSOC Open Source Contributor 2024",
+    image: "/gssoc.png",
+    title: "GSSOC Open Source Contributer 2024",
     description:
-      "Successfully contributed to open-source projects with 3+ PRs merged",
+      "Successfully contributed to opensource projects with 3+ PR's Merged",
   },
   {
     id: 4,
-    image:
-      "https://media.licdn.com/dms/image/v2/D562DAQEXz761WibBeg/profile-treasury-image-shrink_800_800/B56ZUxg8crGQAY-/0/1740292476941?e=1743847200&v=beta&t=ezgVkGsvpPmeLpH8k_nElAtVD6_VMRiw_zdWAHamgFw",
+    image: "/academic.png",
     title: "Academic Excellence Award",
     description:
-      "Received Academic Excellence Certificate from The Head OF CS-AI and Dean of SR University",
+      "Received Academic Excellene Certificate from The Head OF CS-AI and Dean of SR University",
   },
 ];
 
