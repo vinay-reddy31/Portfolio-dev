@@ -96,7 +96,6 @@ export default function ProjectsSection() {
       </motion.div>
 
       <motion.div
-        key={selectedCategory}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
